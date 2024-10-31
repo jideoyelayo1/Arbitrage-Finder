@@ -1,0 +1,54 @@
+.calculator-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .bet-order-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s;
+  }
+  
+  .bet-order-row input {
+    margin-right: 10px;
+    padding: 5px;
+    flex: 1;
+  }
+  
+  .add-button,
+  .calculate-button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    animation: fadeIn 0.5s;
+  }
+  
+  .remove-button {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .tooltip-icon {
+    cursor: pointer;
+  }
+  
+  .result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    animation: slideDown 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideDown {
+    from { transform: translateY(-10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  

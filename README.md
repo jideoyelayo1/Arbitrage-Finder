@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# Arbitrage Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Discover potential arbitrage opportunities with our intuitive arbitrage finder tool, designed to enhance your betting strategy.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Understanding Inverse Sum](#understanding-inverse-sum)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User-Friendly Interface**: Intuitive design for easy navigation and input.
+- **Dynamic Calculations**: Real-time computation of arbitrage opportunities.
+- **Tooltips and Animations**: Hover over elements to get helpful information.
+- **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
+- **Error Handling**: Validates inputs and provides user-friendly error messages.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+Check out the live demo [here](https://jideoyelayo.com/arbitrage-finder).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. **Clone the repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/jideoyelayo1/arbitrage-finder.git
+   cd arbitrage-finder
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Start the development server:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   The app will be running at [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Add Bet Outcomes:**
 
-## Learn More
+   - Click on "➕ Add Outcome" to add a new bet outcome.
+   - Enter the **Outcome** name and its **Odds** in decimal format.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Calculate Arbitrage:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - Once you've entered all outcomes and odds, click on **"Calculate Arbitrage"**.
+   - The app will determine if an arbitrage opportunity exists.
+   - If an opportunity is found, it will display the stake distribution and expected profit percentage.
 
-### Code Splitting
+3. **Understanding the Results:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - **Stake Distribution**: Indicates how much to bet on each outcome to secure a profit.
+   - **Expected Profit**: The guaranteed profit percentage regardless of the event's outcome.
 
-### Analyzing the Bundle Size
+4. **Tooltips:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   - Hover over the **ℹ️** icons to see detailed explanations and guidance.
 
-### Making a Progressive Web App
+## Understanding Inverse Sum
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Inverse Sum Concept**: The inverse sum is calculated by taking the reciprocal of each outcome's decimal odds and summing them up. If this sum is less than 1, it indicates an arbitrage opportunity because the implied probabilities of all outcomes sum to less than 100%. This allows you to distribute your stakes across all outcomes to guarantee a profit.
 
-### Advanced Configuration
+**Formula:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+\[
+\text{Inverse Sum} = \sum \left( \frac{1}{\text{Odds}_i} \right)
+\]
 
-### Deployment
+- If **Inverse Sum < 1**: Arbitrage opportunity exists.
+- If **Inverse Sum ≥ 1**: No arbitrage opportunity.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Technologies Used
 
-### `npm run build` fails to minify
+- **React**: JavaScript library for building user interfaces.
+- **JavaScript (ES6+)**: Modern syntax and features.
+- **CSS3**: Styling and animations.
+- **Reactstrap**: Bootstrap components for React.
+- **Bootstrap**: Responsive design framework.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+
+3. Commit your changes:
+
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+
+4. Push to the branch:
+
+   ```bash
+   git push origin feature/YourFeature
+   ```
+
+5. Open a pull request.
+
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Created by **[Jide Oyelayo](https://jideoyelayo.com)**
+
+- **Website**: [jideoyelayo.com](https://jideoyelayo.com)
+- **Email**: [contact@jideoyelayo.com](mailto:contact@jideoyelayo.com)
+- **GitHub**: [github.com/jideoyelayo1](https://github.com/jideoyelayo1)
+
+Feel free to reach out for any questions or collaboration opportunities!
