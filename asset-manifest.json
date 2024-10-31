@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Arbitrage-Finder/static/css/main.6993026f.css",
-    "main.js": "/Arbitrage-Finder/static/js/main.eb29a0b5.js",
+    "main.js": "/Arbitrage-Finder/static/js/main.94840090.js",
     "static/js/453.186a3ff3.chunk.js": "/Arbitrage-Finder/static/js/453.186a3ff3.chunk.js",
     "index.html": "/Arbitrage-Finder/index.html",
     "main.6993026f.css.map": "/Arbitrage-Finder/static/css/main.6993026f.css.map",
-    "main.eb29a0b5.js.map": "/Arbitrage-Finder/static/js/main.eb29a0b5.js.map",
+    "main.94840090.js.map": "/Arbitrage-Finder/static/js/main.94840090.js.map",
     "453.186a3ff3.chunk.js.map": "/Arbitrage-Finder/static/js/453.186a3ff3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6993026f.css",
-    "static/js/main.eb29a0b5.js"
+    "static/js/main.94840090.js"
   ]
 }
